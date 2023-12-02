@@ -1,0 +1,245 @@
+<html>
+    <head>
+        <title>WEB-HW</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f1;;
+        }
+
+        header {
+            background-color: #2a9441;
+            color: white;
+            padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+        }
+
+        nav {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+        nav li {
+             display: inline-block;
+             margin-right: 20px;
+}   
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 12px;
+        }
+
+        nav a:hover{
+            background-color: white;
+            color:#2a9441;
+            opacity: 0.8;
+            padding: 10px 12px;
+            border-radius: 4px;
+
+        }
+
+        h1{
+            margin-left: 10px;
+            padding-right: 20px;
+
+        }
+
+        footer{
+            background-color: #2a9441;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+            
+
+        }
+
+        iframe{
+            
+            height:700px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        section{
+            display: flex;
+            justify-content: space-between;
+             padding: 20px;
+            margin: 5px;
+             border: #34eb6e 6px solid;
+             border-radius: 4px;
+        }
+
+
+        .article {
+            width: 30%;
+            border: 3px solid #2a9441;
+            padding: 10px;
+            margin: 0 5px;
+            border-radius: 4px;
+    
+}
+    
+       
+         .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: white; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+        label {
+             font-weight: bold;
+             color: #2ecc71; 
+}
+
+        legend {
+             font-size: 1.2em;
+            color: #2ecc71;
+            margin-bottom: 10px;
+            font-weight: bold;
+}
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #bdc3c7; 
+            border-radius: 4px;
+}
+
+        .button{
+            background-color: #2ecc71; 
+            color: white; 
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+
+
+        }
+
+        .button:hover{
+            background-color: #27ae60;
+            
+
+        }
+
+        img,video{
+
+            border-radius: 4px;
+        }
+
+        
+        </style>
+
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Fittness And wellness</h1>
+            <img class="logo" src="logo.png" width="10%" >
+            <nav>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Info</a></li>
+                </ul>
+            </nav>
+
+
+        </header>
+
+        <section>
+            
+
+              
+
+           
+
+            <article class="article">
+                <div class="form-container">
+                <form>
+                    <fieldset>
+                            <legend>Leave Your Opinion</legend>
+                    
+                        <label for="username">Username:</label>
+                        <input type="username" name="username" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required><br><br>
+                        <label for="Comment">Comment:</label>
+                        <textarea rows="5"></textarea><br><br>
+                        <input class="button" type="submit"><br><br>
+                        <input class="button" type="reset"  value="Clear">
+                    </fieldset>
+                   </form>
+                </div>
+                
+                
+                </article>
+                
+                <article class="article">
+                    <iframe src="https://www.wave-wellness.com/" frameborder="0" width="98%" height="245px" ></iframe>
+                    
+    
+    
+    
+                </article>
+
+                <article class="article">
+                    <video controls width="98%" height="300px">
+                        <source src="fittness.mp4">
+    
+    
+                    </video><br><br>
+                    <p style="text-align: center;"><b>Joe Holder Teaches Fitness and Wellness Fundamentals.</b></p>
+                    <br><br>
+
+                    <img src="fittness.jfif" width="98%" height="300px"><br><br>
+                    <p style="text-align: center;"><b>A Logo Image of an fittness webage.</b><p>
+                    <br><br>
+
+                    
+    
+    
+    
+    
+                </article>
+
+
+           
+
+
+
+        </section>
+    <footer>
+
+        &copy;Fittness And wellness,2023
+
+    </footer>    
+
+
+    </body>
+
+
+
+</html>
