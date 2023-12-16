@@ -96,6 +96,8 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 600px) {
@@ -103,15 +105,19 @@ section {
         padding: 10px;
     }
 
-    .video-container {
-        border-radius: 0; /* Remove border-radius on smaller screens if needed */
+    .video-container,
+    .video-aside {
+        flex: 100%; /* Take up 100% width on smaller screens */
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .video-aside {
-        width: 100%; /* Take up full width on smaller screens */
-        margin-top: 10px;
+    .video-container video {
+        border-radius: 0;
     }
 }
+
 footer {
     background-color: #007bff;
     color: white;
@@ -391,6 +397,7 @@ footer a{
     float: right; 
     width: calc(30% - 20px); 
     margin-left: 20px; 
+    
 }
 
 .video-aside h2 {
