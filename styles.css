@@ -98,17 +98,29 @@ section {
     margin-top: 20px;
 }
 
+@media screen and (max-width: 600px) {
+    section {
+        padding: 10px;
+    }
+
+    .video-container {
+        border-radius: 0; /* Remove border-radius on smaller screens if needed */
+    }
+
+    .video-aside {
+        width: 100%; /* Take up full width on smaller screens */
+        margin-top: 10px;
+    }
+}
 footer {
-    background-color: #007bff; 
+    background-color: #007bff;
     color: white;
     text-align: center;
-    width: 100%;
     padding: 10px 0;
     font-weight: bold;
     position: sticky;
-    bottom: 0px;
+    bottom: 0;
     margin-top: 20px;
-    
 }
 
 .ai-image{
@@ -256,6 +268,9 @@ h3{
 .footer-container{
     width: 100%;
     margin: auto;
+   
+    
+    
 
 }
 
@@ -263,7 +278,6 @@ h3{
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    flex-wrap: wrap;
 }
 
 .footer-content a {
@@ -301,6 +315,16 @@ h3{
     padding: 0;
     
 
+}
+
+@media screen and (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content div {
+        margin-bottom: 10px;
+    }
 }
 
 .list li{
