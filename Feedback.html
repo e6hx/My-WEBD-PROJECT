@@ -29,7 +29,7 @@
 
     <section>
         
-        <form>
+        <form id="commentForm">
 			<fieldset>
 			
 			<legend><b>Leave A Comment</b></legend>
@@ -45,12 +45,12 @@
             <textarea id="message" name="message" rows="4" required></textarea>
 			<br>
 			<br>
-            <input class="submit" type="submit">
+            <input class="submit" type="submit" onclick="saveFormData()">
 			<input class="clear" type="reset" value="Clear">
 			</fieldset>
 		</form>
     </section>
-
+<!--Using footer to display the copyright and contact emails-->
     <footer>
         
         <div class="footer-container">
@@ -67,7 +67,27 @@
             </div>
         </div>
     </footer>
+<!--adding a javascript script to make the page more responsive-->
+    <script>
+    document.getElementById('name').value = localStorage.getItem('name') || '';
+    document.getElementById('email').value = localStorage.getItem('email') || '';
+    document.getElementById('message').value = localStorage.getItem('message') || '';     
 
-    <script src="script.js"></script>
+    function saveFormData() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    localStorage.setItem('name', name);
+    localStorage.setItem('email', email);
+    localStorage.setItem('message', message);
+
+    alert('Form data saved!');
+}
+
+</script>
+
+
+    
 </body>
 </html>
